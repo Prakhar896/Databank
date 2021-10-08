@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Welcome to the Databank!</title>
+	<style>
+		body {
+			text-align: center;
+		}
+
+		.dataBankFiles {
+			visibility: hidden;
+		}
+
+		html,
+		body {
+			height: 100%;
+		}
+
+		html {
+			display: table;
+			margin: auto;
+		}
+
+		body {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	</style>
+	<script src="https://unpkg.com/axios/dist/axios.min.js">
+	</script>
+</head>
+
+<body>
+	<h1>Welcome to the Databank!</h1>
+	<p>Please enter credentials to gain access!</p>
+
+	<form>
+		<label for="pass">Enter password:</label><br>
+      <input type="password" id="authkeyfield" value="">
+    </form>
+    <script src="home"></script>
+    <button onclick="checkPassword()">Access</button>
+
+    <div class="dataBankFiles">
+      <p>Logged in! Redirecting now...</p>
+    </div>
+</html>
